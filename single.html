@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  {{ partial "googleTagManager" . }}
+	{{ .Render "meta_data"}}
+	<link rel="preload" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style">
+	<link rel="stylesheet" type="text/css" href="{{- (index .Site.Data.manifest "fu-main-hr-apps.css") -}}">
+  {{partial "vendors/load-defer-css"}}
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </noscript>
+  <script type="text/javascript" src="{{- (index .Site.Data.manifest "/landing/scripts/hr-appstore.js") -}}" async></script>
+  <script type="text/javascript" src="{{- (index .Site.Data.manifest "fonts.js") -}}" defer></script>
+</head>
+<body>
+	{{ partial "googleTagManagerNoScript" . }}
+	<div class="mdl-layout__container">
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+			{{ .Render "navbar-hr-apps" }}
+			<main itemscope="" itemtype="http://schema.org/WebPage" class="mdl-layout__content">
+				<div class="mdl-tabs__panel is-active">
+					<div class="fu-main-body">
+						{{ .Render "hero-image" }}
+						{{ .Render "main" }}
+						{{ partial "footer" . }}
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+  {{ partial "vendors/load-defer-image" }}
+  {{ partial "vendors/load-defer-video" }}
+</body>
+</html>

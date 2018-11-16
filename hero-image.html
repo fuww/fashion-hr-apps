@@ -1,0 +1,23 @@
+<header class="fu-hr-apps-background-image">
+	<div class="mdl-grid fu-hr-apps-header">
+		<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone fu-hr-apps-video--center">
+		<!-- to do: when the translation of the video are ready, move the urls to the config file -->
+		{{ if eq .Site.Params.locale "nl-NL" }}
+			<iframe title="Fashion HR Apps" class="fu-hr-apps-video" data-video-src="https://www.youtube.com/embed/lkc6q4Rb53w" src="" frameborder="0" allowfullscreen></iframe>
+		{{ else }}
+				<a href="{{$.Site.Params.hrapps.linkToHRapps}}" target="_blank"><img src="/landing/images/hr-apps/hr_apps_image.jpg" alt="Fashion HR apps"></a>
+		{{ end }}
+		</div>
+		<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone fu-hr-apps-teaser-container">
+			<h1 class="fu-hr-apps-teaser">
+				{{ i18n "hero-image-header" }}
+			</h1>
+			<div class="fu-hr-apps-teaser--bold">
+				{{ i18n "hero-image-sub-header" }}
+			</div>
+			<div class="fu-hr-apps-button-container">
+				<a class="fu-hr-apps-button" href="{{$.Site.Params.hrapps.linkToHRapps}}" rel="noopener" target="_blank">{{ i18n "hero-image-button"}}</a>
+			</div>
+		</div>
+	</div>
+</header>

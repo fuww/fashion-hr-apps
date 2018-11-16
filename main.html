@@ -1,0 +1,99 @@
+
+<div class="mdl-grid mdl-grid--no-spacing hr-store-section--position fu-hr-apps-section">
+  <div class="mdl-grid hr-store-section--center">
+    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone fu-hr-apps-section__content">
+      {{ i18n "section-row-text1" }}
+    </div>
+    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone fu-hr-apps-section__content">
+      {{ i18n "section-row-text2" }}
+      <a href="{{$.Site.Params.hrapps.linkToHRapps}}" class="fu-hr-apps-link" rel="noopener" target="_blank"><i class="material-icons fu-hr-apps-icon--space">chevron_right</i>{{ i18n "section-row-text2-link" }}</a>
+    </div>
+    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone fu-hr-apps-section__content">
+     {{ i18n "section-row-text3" }}
+     <a href="{{$.Site.Params.hrapps.linkToHRapps}}" class="fu-hr-apps-link" rel="noopener" target="_blank"><i class="material-icons fu-hr-apps-icon--space">chevron_right</i>{{ i18n "section-row-text3-link" }}</a>
+   </div>
+   <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone fu-hr-apps-section__content">
+    {{ i18n "section-row-text4" }}
+  </div>
+</div>
+<div class="fu-hr-apps-shape1"></div>
+<div class="fu-hr-apps-shape2"></div>
+</div>
+<div class="fu-hr-apps-section2">
+  <h2 >
+    {{ i18n "teaser-title" }}<span>{{ i18n "teaser-subtitle" }}</span>
+  </h2>
+</div>
+<div class="fu-hr-apps-section3">
+  <p>
+    {{ i18n "section-text" }}
+  </p>
+  <!-- to do: when the translation of the video are ready, move the urls to the config file -->
+  {{ if eq .Site.Params.locale "nl-NL" }}
+  <div class="fu-hr-apps-button-container">
+    <a class="fu-hr-apps-button" href="https://youtu.be/lkc6q4Rb53w" rel="noopener" target="_blank">{{ i18n "section-text-button" }}</a>
+  </div>
+  {{ end }}
+  <div class="fu-hr-apps-shape1"></div>
+</div>
+<div class="fu-hr-apps-section4">
+  <h3>{{ i18n "section-header" }}</h3>
+  <p class="fu-hr-apps-section4-teaser">{{ i18n "section-subheader" }}</p>
+  <div class="mdl-grid fu-hr-apps--center hr-store-section--center">
+    <div class="mdl-cell mdl-cell--5-col mdl-cell--8-col-tablet mdl-cell--4-col-phone center">
+      <span>{{ i18n "section-image-header1" }}</span>
+      {{ if eq .Site.Params.locale "nl-NL" }}
+      <img src="/landing/images/hr-apps/hr-apps-then-now/hr_apps_toen.png" alt="Fashion HR apps">
+      {{ else if eq .Site.Params.locale "de-DE" }}
+      <img src="/landing/images/hr-apps/hr-apps-then-now/hr_apps_fruher.png" alt="Fashion HR apps">
+      {{ else if eq .Site.Params.locale "en-GB" }}
+      <img src="/landing/images/hr-apps/hr-apps-then-now/hr_apps_then.png" alt="Fashion HR apps">
+      {{ end }}
+      <div class="fu-hr-apps-button-container margin-desktop">
+        <h4 class="fu-hr-apps-button-container--title">{{ i18n "section-article-header1" }}</h4>
+      </div>
+      <p class="fu-hr-apps-button-container--supporting-tex">{{ i18n "section-article-text1" }}</p>
+    </div>
+    <div class="fu-hr-app-dashed-line"><span>{{ i18n "section-image-split" }}</span></div>
+    <div class="mdl-cell mdl-cell--5-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+      <span>{{ i18n "section-image-header2" }}</span>
+      {{ if eq .Site.Params.locale "nl-NL" }}
+      <img src="/landing/images/hr-apps/hr-apps-then-now/hr_apps_nu.png" alt="Fashion HR apps">
+      {{ else if eq .Site.Params.locale "de-DE" }}
+      <img src="/landing/images/hr-apps/hr-apps-then-now/hr_apps_heute.png" alt="Fashion HR apps">
+      {{ else if eq .Site.Params.locale "en-GB" }}
+      <img src="/landing/images/hr-apps/hr-apps-then-now/hr_apps_now.png" alt="Fashion HR apps">
+      {{ end }}
+      <div class="fu-hr-apps-button-container margin-desktop">
+        <h4 class="fu-hr-apps-button-container--title">{{ i18n "section-article-header2" }}</h4>
+      </div>
+      <p class="fu-hr-apps-button-container--supporting-tex">{{ i18n "section-article-text2" }}</p>
+    </div>
+  </div>
+</div>
+<div class="fu-hr-apps-section5">
+  <div class="fu-hr-apps-teaser">
+    {{ i18n "section-brands-header" }}
+  </div>
+  <p>{{ i18n "section-brands-subheader" }}</p>
+  <div class="mdl-grid fu-hr-apps-img--center hr-store-section--center">
+    <img src="/landing/images/hr-apps/hr-apps-logos/logo-cammio.png" alt="Cammio" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+    <img src="/landing/images/hr-apps/hr-apps-logos/eelloo-soon-1.png" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" alt="Eello">
+    <img src="/landing/images/hr-apps/hr-apps-logos/Screenen-com.png" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" alt="Screenen.com">
+    <img src="/landing/images/hr-apps/hr-apps-logos/logo-ligo_compr.png" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" alt="Ligo">
+    <img src="/landing/images/hr-apps/hr-apps-logos/logo-hro-recruitment.png" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" alt="HR office recruitment">
+    <img src="/landing/images/hr-apps/hr-apps-logos/logo-matchQ.png" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" alt="MatchQ">
+    <img src="/landing/images/hr-apps/hr-apps-logos/cvMonitor-1.png" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" alt="CV Monitor">
+    <img src="/landing/images/hr-apps/hr-apps-logos/Adver-Online.png" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" alt="Adver Online">
+    <img src="/landing/images/hr-apps/hr-apps-logos/logo-bluecarpet.png" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" alt="Blue Carpet">
+    <img src="/landing/images/hr-apps/hr-apps-logos/2342.jpg" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" alt="Recruitz.io">
+    <img src="/landing/images/hr-apps/hr-apps-logos/Indeed.png" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" alt="Indeed">
+    <img src="/landing/images/hr-apps/hr-apps-logos/Elycio.png" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" alt="Elycio">
+    <img src="/landing/images/hr-apps/hr-apps-logos/Xpert-HR-soon-1.png" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" alt="XpertHR">
+    <img src="/landing/images/hr-apps/hr-apps-logos/Appical.png" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" alt="Appical">
+  </div>
+  <div class="fu-hr-apps-button-container">
+    <a class="fu-hr-apps-button button--color1" href="{{$.Site.Params.hrapps.linkToHRapps}}" rel="noopener" target="_blank">{{ i18n "section-brands-button" }}</a>
+  </div>
+</div>
+
