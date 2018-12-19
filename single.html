@@ -3,14 +3,14 @@
 <head>
   {{ partial "googleTagManager" . }}
 	{{ .Render "meta_data"}}
+	{{ partial "styles/fu-main-hr-apps" }}
+	{{ partial "vendors/load-defer-css"}}
 	<link rel="preload" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style">
-	<link rel="stylesheet" type="text/css" href="{{- (index .Site.Data.manifest "fu-main-hr-apps.css") -}}">
-  {{partial "vendors/load-defer-css"}}
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </noscript>
-  <script type="text/javascript" src="{{- (index .Site.Data.manifest "/landing/scripts/hr-appstore.js") -}}" async></script>
-  <script type="text/javascript" src="{{- (index .Site.Data.manifest "fonts.js") -}}" defer></script>
+  {{ partial "scripts/hr-appstore" }}
+  {{ partial "scripts/fonts" }}
 </head>
 <body>
 	{{ partial "googleTagManagerNoScript" . }}
