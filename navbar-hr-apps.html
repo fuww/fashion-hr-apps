@@ -18,7 +18,7 @@
       <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).url }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.jobs }}</a>
 
       {{ if .Site.Params.joomlaNavBar }}
-        <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.eventsUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.events }}</a>
+        <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.marketplaceUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.marketplace }}</a>
         <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.dataUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.data }}</a>
       {{ end }}
 
@@ -50,9 +50,9 @@
   <nav class="mdl-navigation">
     <a class="mdl-navigation__link" href="{{if .Site.Params.showBaseUrlPrefix}}{{.Site.Params.baseUrlPrefix}}{{else}}/{{end}}"><i class="fu-material-icons fu-news" role="presentation"></i>{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.news }}</a>
     <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).url }}"><i class="fu-material-icons fu-work" role="presentation"></i>{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.jobs }}</a>
+    <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.marketplaceUrl }}"><i class="fu-material-icons fu-event" role="presentation"></i>{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.marketplace }}</a>
 
     {{ if .Site.Params.joomlaNavBar }}
-      <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.eventsUrl }}"><i class="fu-material-icons fu-event" role="presentation"></i>{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.events }}</a>
       <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.dataUrl }}"><i class="fu-material-icons fu-data" role="presentation"></i>{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.data }}</a>
     {{ end }}
 
