@@ -1,0 +1,308 @@
+/**
+
+* Container for labels on Images
+
+*/
+
+%label-container {
+  position: absolute;
+
+  display: table;
+
+  height: 44px;
+  @media screen and (max-width: 991px) {
+    height: 88px;
+  }
+}
+
+/**
+
+* Label Position on images
+
+*/
+
+%label-tags {
+  font-size: 12px;
+  font-weight: bold;
+
+  clear: both;
+
+  padding: 5px 10px;
+
+  transition: ease-out .15s;
+  text-transform: uppercase;
+
+  border-radius: 0;
+  background-color: $default-category-color;
+  &:hover {
+    transition: ease-out .15s;
+
+    background-color: $default-category-category-tag-hover;
+  }
+  @media screen and (max-width: 991px) {
+    font-size: 20px;
+  }
+  &.fu-category {
+    float: right;
+  }
+  &.fu-category-tag {
+    float: right;
+
+    color: $default-category-color;
+    background-color: white !important;
+    &:hover {
+      color: $default-category-category-tag-hover;
+    }
+    &:hover {
+      transition: ease-out .15s;
+    }
+  }
+}
+
+/**
+
+* Label Category styles and colors
+
+*/
+
+%label-category-tag-colors {
+  &.fu-retail {
+    &:hover {
+      background-color: $retail-color-hover;
+    }
+    .label {
+      background-color: $retail-color;
+      &:hover {
+        background-color: $retail-category-tag-hover;
+      }
+      &.fu-category-tag {
+        color: $retail-color;
+        &:hover {
+          color: $retail-category-tag-hover;
+        }
+      }
+    }
+  }
+  &.fu-culture {
+    &:hover {
+      background-color: $culture-color-hover;
+    }
+    .label {
+      background-color: $culture-color;
+      &:hover {
+        background-color: $culture-category-tag-hover;
+      }
+      &.fu-category-tag {
+        color: $culture-color;
+        &:hover {
+          color: $culture-category-tag-hover;
+        }
+      }
+    }
+  }
+  &.fu-fairs {
+    &:hover {
+      background-color: $fairs-color-hover;
+    }
+    .label {
+      background-color: $fairs-color;
+      &:hover {
+        background-color: $fairs-category-tag-hover;
+      }
+      &.fu-category-tag {
+        color: $fairs-color;
+        &:hover {
+          color: $fairs-category-tag-hover;
+        }
+      }
+    }
+  }
+  &.fu-fashion {
+    &:hover {
+      background-color: $fashion-color-hover;
+    }
+    .label {
+      background-color: $fashion-color;
+      &:hover {
+        background-color: $fashion-category-tag-hover;
+      }
+      &.fu-category-tag {
+        color: $fashion-color;
+        &:hover {
+          color: $fashion-category-tag-hover;
+        }
+      }
+    }
+  }
+  &.fu-business {
+    &:hover {
+      background-color: $business-color-hover;
+    }
+    .label {
+      background-color: $business-color;
+      &:hover {
+        background-color: $business-category-tag-hover;
+      }
+      &.fu-category-tag {
+        color: $business-color;
+        &:hover {
+          color: $business-category-tag-hover;
+        }
+      }
+    }
+  }
+  &.fu-people {
+    &:hover {
+      background-color: $people-color-hover;
+    }
+    .label {
+      background-color: $people-color;
+      &:hover {
+        background-color: $people-category-tag-hover;
+      }
+      &.fu-category-tag {
+        color: $people-color;
+        &:hover {
+          color: $people-category-tag-hover;
+        }
+      }
+    }
+  }
+  &.fu-education-news, &.fu-education-schools, &.fu-education {
+    &:hover {
+      background-color: $education-color-hover;
+    }
+    .label {
+      background-color: $education-color;
+      &:hover {
+        background-color: $education-category-tag-hover;
+      }
+      &.fu-category-tag {
+        color: $education-color;
+        &:hover {
+          color: $education-category-tag-hover;
+        }
+      }
+    }
+  }
+}
+
+/**
+
+* Hover effect with box shadow
+
+*/
+
+%hover-with-box-shadow {
+  background-color: transparent;
+  box-shadow: 0px 64px 64px 0px rgba(44,37,18,0.20), 0px 32px 32px 0px rgba(44,37,18,0.20), 0px 2px 2px 0px rgba(44,37,18,0.20), 0px 4px 4px 0px rgba(44,37,18,0.20), 0px 8px 8px 0px rgba(44,37,18,0.20), 0px 16px 16px 0px rgba(44,37,18,0.20);
+}
+
+
+/**
+
+* Limit lines of text & ReadMore button
+
+*/
+
+%truncate-lines-text {
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  &:after {
+    font-size: 13px;
+    font-weight: bold;
+
+    position: relative;
+    bottom: 1px;
+
+    content: '   [...]';
+  }
+}
+
+/**
+
+* Container for introduction text
+
+*/
+
+%article-heading-text {
+  font-weight: bold;
+
+  display: block;
+  display: -webkit-box;
+
+  min-height: auto;
+  margin: 17px 0 5px 0;
+  @media screen and (max-width: 991px) {
+    height: auto;
+  }
+  a {
+    display: block;
+  }
+}
+
+/**
+
+* Responsive container for Spotlight one
+
+*/
+
+@media screen and (max-width: 991px) {
+  %article-container-mobile {
+    position: relative;
+    z-index: 0;
+    .fu-article-img, .fu-breaking-news-image {
+      img {
+        display: block;
+      }
+      .fu-category-container {
+        right: 0;
+
+        height: 88px;
+        margin-top: -100px;
+        margin-right: 0;
+      }
+      .label {
+        font-size: 20px;
+
+        padding: 5px 10px;
+        &.fu-category-tag {
+          display: block;
+        }
+      }
+    }
+    .fu-article-text {
+      .fu-truncate-threelines {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+/**
+
+* Sort icons
+
+*/
+
+%fu-icon-sort-image {
+  top: 4px;
+  content: '\f0dd';
+  font-family: FontAwesome;
+  transform: rotateZ(0);
+  display: inline-block;
+  transition: all .5s ease;
+  width: 24px;
+  height: 19px;
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+  overflow: hidden;
+  line-height: 14px;
+}

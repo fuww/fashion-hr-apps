@@ -1,0 +1,826 @@
+section.mdl-grid.mdl-grid--no-spacing {
+  overflow: visible !important;
+}
+
+.fu-apple-banner.mdl-cell--hide-phone a {
+  display: block;
+  min-height: 600px;
+}
+
+/* Landing base */
+
+h2,
+h3,
+h4 {
+  line-height: normal;
+}
+
+h2 {
+  font-size: 16px;
+  text-align: left;
+}
+
+/*class or ID that limits the area of the ripple effect*/
+
+section.mdl-grid.mdl-grid--no-spacing {
+  position: relative;
+
+  overflow: hidden;
+}
+
+/*
+  .ink styles - the elements which will create the ripple effect.
+  The size and position of these elements will be set by the JS code.
+  Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.
+*/
+
+.ink {
+  position: absolute;
+
+  transform: scale(0);
+
+  opacity: 0;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.25);
+  &.is-animating {
+    transition: transform 0.3s $animation-curve-linear-out-slow-in,
+      width 0.3s $animation-curve-linear-out-slow-in,
+      height 0.3s $animation-curve-linear-out-slow-in,
+      opacity 0.6s $animation-curve-linear-out-slow-in;
+  }
+  &.is-visible {
+    opacity: 0.3;
+  }
+}
+
+/*animation effect*/
+
+.ink.animate {
+  animation: a-ripple 0.25s ease-in;
+
+  -webkit-animation: a-ripple 0.25s ease-in;
+}
+
+@keyframes a-ripple {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+
+    opacity: 0;
+  }
+}
+
+/*...............................................
+
+FU-IMAGE HEADER //cleaned
+
+................................................*/
+
+.fu-background-image {
+  background-color: #2c2c2c;
+  background-image: url("/landing/images/home/header_jobs_landing_page.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 14%;
+  background-size: cover;
+
+  min-height: 310px;
+
+  flex-shrink: 0;
+}
+
+.fu-main-body {
+  margin-top: -333px;
+
+  flex-shrink: 0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3) {
+  .fu-background-image {
+    background-image: url("/landing/images/home/header_jobs_landing_page_iphone6.jpg");
+  }
+}
+
+/*...............................................
+
+FU-LITE LANDING
+
+................................................*/
+.fu-image-full {
+  background-image: url("/landing/images/home/header.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center top;
+}
+
+.fu-lite-header-container {
+  position: relative;
+  top: 15%;
+
+  @media (min-width: 480px) {
+    top: 15%;
+  }
+
+  @media (min-width: 840px) {
+    top: 11%;
+  }
+}
+
+.fu-lite-header {
+  z-index: 30;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+
+  @media (min-width: 480px) {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 840px) {
+    font-size: 75px;
+    margin-bottom: 60px;
+  }
+}
+
+.fu-lite-button-container {
+  max-width: 840px;
+  justify-content: space-around;
+
+  .fu-lite-button {
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: #4dcdb3;
+    font-family: "Futura PT Web Condensed Bold";
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+.fu-lite-text-container {
+  max-width: 840px;
+  margin: 70px auto 0;
+  padding: 20px;
+
+  h2 {
+    text-align: center;
+    font-size: 21px;
+    margin: 0 0 5px;
+  }
+
+  p {
+    color: #fff;
+    text-align: center;
+  }
+}
+
+/*...............................................
+
+HEADER TITLE & DESCRIPTION //cleaned
+
+................................................*/
+
+.section--center.mdl-grid.mdl-grid--no-spacing.fu-main-header {
+  border-bottom: 1px solid transparent; // color by default is whitesmoke
+
+  padding-top: 93px;
+  padding-bottom: 30px; //0px by default
+}
+
+.fu-main-header--text,
+.fu-main-header--text a {
+  text-align: center;
+
+  letter-spacing: 0.01em;
+  color: #fff;
+
+  font-weight: bold;
+}
+
+.fu-main-header--text {
+  p {
+    color: #fff;
+  }
+}
+
+.fu-main-header-container {
+  &.fu-main-header.section--center.mdl-grid.mdl-grid--no-spacing {
+    padding-top: 69px;
+  }
+  .fu-main-header--text--subheader {
+    margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.fu-main-header--text h1 {
+  font-size: 26px;
+  padding: 10px;
+  margin: 0;
+
+  @media (min-width: 480px) {
+    font-size: 34px;
+    padding: 0;
+    margin: 24px 0;
+  }
+}
+
+.fu-main-header--text a:hover {
+  color: #ededed;
+}
+
+.fu-jobs-landing-container {
+  .section--center.mdl-grid.mdl-grid--no-spacing.fu-main-header {
+    padding: 10px;
+  }
+
+  .fu-main-header--text a {
+    color: #404040;
+  }
+}
+
+/*...............................................
+
+BREADCROMP LINE //cleaned
+
+................................................*/
+
+.section--center.mdl-grid.mdl-grid--no-spacing.fu-main-breadcrom {
+  border-bottom: 1px solid transparent; // color by default is whitesmoke
+}
+
+.fu-main-breadcrom__links {
+  padding-left: 20px;
+
+  text-align: left;
+
+  font-size: 10px;
+}
+
+.fu-main-breadcrom__links--icon,
+.fu-main-breadcrom__links--text {
+  color: #fff;
+}
+
+.fu-main-social__icon {
+  padding-right: 24px;
+
+  text-align: right;
+
+  font-size: 13px;
+}
+
+.fu-main-social__icon a {
+  padding-right: 21px;
+  padding-left: 5px;
+
+  color: #fff;
+}
+
+/*...............................................
+
+BODY JOB BOARD //cleaned
+
+................................................*/
+
+.fu-main-body__card-white h2,
+.fu-main-body__card-grey h4 {
+  color: $text-color-primary;
+  text-transform: uppercase;
+
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.fu-main-body__card-white p,
+.fu-main-body__card-grey p {
+  font-size: 14px;
+}
+
+.fu-main-body__card-white {
+  background-color: #fff;
+}
+
+.fu-main-body__column-grey {
+  background-color: #ededed;
+
+  text-align: center;
+}
+
+.fu-main-body__card-grey {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.fu-main-body__card-white header,
+.fu-main-body__card-grey header {
+  padding-top: 13px;
+  padding-right: 20px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+}
+
+.fu-main-body__card-white h2 {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.fu-main-body__card-white p {
+  margin-top: 3px;
+  margin-bottom: 6px;
+
+  text-align: justify;
+
+  line-height: 1.4;
+  color: rgb(97, 97, 97);
+}
+
+.fu-main-body__container {
+  padding-top: 15px;
+  padding-right: 3px;
+  padding-bottom: 15px;
+  padding-left: 3px;
+}
+
+.fu-main-body__card-grey h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $text-color-primary;
+}
+
+.fu-main-body__card-grey p {
+  margin-top: 3px;
+  margin-bottom: 0;
+
+  padding-bottom: 0;
+  padding-left: 0;
+
+  text-align: justify;
+  text-align: center;
+
+  line-height: 1.4;
+  color: rgb(97, 97, 97);
+}
+
+.fu-body__Button {
+  margin-bottom: 20px;
+
+  border-left-width: 1px;
+
+  border-left-style: solid;
+
+  border-left-color: rgba(232, 231, 231, 0.54);
+
+  background-color: #f8f8f8;
+
+  padding: 24px;
+}
+
+/*...............................................
+
+BODY JOB BOARD: BORDER LINE GRADIENT //cleaned
+................................................*/
+
+.fu-border-line-gradient_1 {
+  transition: background-color 0.2s ease-in-out;
+
+  border-bottom-width: 1px;
+  border-left-width: 4px;
+
+  border-bottom-style: solid;
+  border-left-style: solid;
+
+  border-bottom-color: #f5f5f5;
+  border-left-color: #396a92;
+
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+}
+
+.fu-border-line-gradient_1:hover {
+  background-color: #396a92;
+
+  color: #fff;
+}
+
+.fu-border-line-gradient_1:hover h2,
+.fu-border-line-gradient_1:hover p {
+  color: #fff;
+}
+
+.fu-border-line-gradient_2 {
+  transition: background-color 0.2s ease-in-out;
+
+  border-bottom-width: 1px;
+  border-left-width: 4px;
+
+  border-bottom-style: solid;
+  border-left-style: solid;
+
+  border-bottom-color: #f5f5f5;
+  border-left-color: #6188a8;
+
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+}
+
+.fu-border-line-gradient_2:hover {
+  background-color: #6188a8;
+
+  color: #fff;
+}
+
+.fu-border-line-gradient_2:hover h2,
+.fu-border-line-gradient_2:hover p {
+  color: #fff;
+}
+
+.fu-border-line-gradient_3 {
+  transition: background-color 0.2s ease-in-out;
+
+  border-bottom-width: 1px;
+  border-left-width: 4px;
+
+  border-bottom-style: solid;
+  border-left-style: solid;
+
+  border-bottom-color: #f5f5f5;
+  border-left-color: #7496b2;
+
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+}
+
+.fu-border-line-gradient_3:hover {
+  background-color: #7496b2;
+
+  color: #fff;
+}
+
+.fu-border-line-gradient_3:hover h2,
+.fu-border-line-gradient_3:hover p {
+  color: #fff;
+}
+
+.fu-border-line-gradient_4 {
+  transition: background-color 0.2s ease-in-out;
+
+  border-bottom-width: 1px;
+  border-left-width: 4px;
+
+  border-bottom-style: solid;
+  border-left-style: solid;
+
+  border-bottom-color: #f5f5f5;
+  border-left-color: #88a6be;
+
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+}
+
+.fu-border-line-gradient_4:hover {
+  background-color: #88a6be;
+
+  color: #fff;
+}
+
+.fu-border-line-gradient_4:hover h2,
+.fu-border-line-gradient_4:hover p {
+  color: #fff;
+}
+
+.fu-border-line-gradient_5 {
+  transition: background-color 0.2s ease-in-out;
+
+  border-bottom-width: 1px;
+  border-left-width: 4px;
+
+  border-bottom-style: solid;
+  border-left-style: solid;
+
+  border-bottom-color: #f5f5f5;
+  border-left-color: #9cb4c8;
+
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+}
+
+.fu-border-line-gradient_5:hover {
+  background-color: #9cb4c8;
+
+  color: #fff;
+}
+
+.fu-border-line-gradient_5:hover h2,
+.fu-border-line-gradient_5:hover p {
+  color: #fff;
+}
+
+.fu-border-line-gradient_6 {
+  transition: background-color 0.2s ease-in-out;
+
+  border-bottom-width: 1px;
+  border-left-width: 4px;
+
+  border-bottom-style: solid;
+  border-left-style: solid;
+
+  border-bottom-color: #f5f5f5;
+  border-left-color: #b0c3d3;
+
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+}
+
+.fu-border-line-gradient_6:hover {
+  background-color: #b0c3d3;
+
+  color: #fff;
+}
+
+.fu-border-line-gradient_6:hover h2,
+.fu-border-line-gradient_6:hover p {
+  color: #fff;
+}
+
+.fu-border-line-gradient_7 {
+  transition: background-color 0.2s ease-in-out;
+
+  border-left-width: 4px;
+
+  border-left-style: solid;
+
+  border-left-color: #b0c3d3;
+
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+}
+
+.fu-border-line-gradient_7:hover {
+  background-color: #b0c3d3;
+
+  color: #fff;
+}
+
+.fu-border-line-gradient_7:hover h2,
+.fu-border-line-gradient_7:hover p {
+  color: #fff;
+}
+
+/*...............................................
+
+BANNER STYLE //cleaned
+................................................*/
+
+section.fu-wfb.mdl-grid.mdl-grid--no-spacing.mdl-color--white {
+  position: inherit;
+
+  margin-top: -44px;
+
+  border-bottom-color: transparent;
+}
+
+.fu-wfb--title {
+  padding-top: 33px;
+
+  color: $text-color-primary;
+}
+
+.fu-wfb--title h3 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 22px !important;
+
+  @media (min-width: 480px) {
+    font-size: 28px !important;
+  }
+
+  font-weight: bold;
+}
+
+.fu-wfb p {
+  padding-bottom: 30px;
+
+  line-height: 1.4;
+
+  font-size: 14px;
+}
+
+/* ----------- Non-Retina Screens Desktop ----------- */
+
+@media screen and (max-width: 1024px) {
+  .fu-background-image {
+    background-position: center;
+  }
+  .mdl-layout__header {
+    min-height: 56px !important;
+  }
+  .mdl-layout__header-row {
+    padding: 0 16px 0 72px !important;
+
+    height: 56px !important;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .fu-background-image {
+    margin-top: -3em;
+
+    background-position: 12%;
+
+    min-height: 427px;
+  }
+
+  .section--center.mdl-grid.mdl-grid--no-spacing.fu-main-header {
+    padding-top: 47px;
+  }
+}
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .section--center.mdl-grid.mdl-grid--no-spacing.fu-main-header {
+    border-color: transparent;
+
+    padding-bottom: 22px;
+  }
+
+  .mdl-card_supporting-text.mdl-cell.mdl-cell--6-col.fu-main-social__icon {
+    padding-right: 0;
+    padding-bottom: 5px;
+
+    text-align: center;
+  }
+  .fu-main-social__icon a {
+    padding-right: 35px;
+    padding-bottom: 4px;
+    padding-left: 13px;
+
+    font-size: 20px;
+  }
+
+  .fu-border-line-gradient_1:focus,
+  .fu-border-line-gradient_2:focus,
+  .fu-border-line-gradient_3:focus,
+  .fu-border-line-gradient_4:focus,
+  .fu-border-line-gradient_5:focus,
+  .fu-border-line-gradient_6:focus,
+  .fu-border-line-gradient_7:focus {
+    background-color: #396a92;
+
+    color: #fff;
+  }
+  .fu-border-line-gradient_1:focus h2,
+  .fu-border-line-gradient_1:focus p,
+  .fu-border-line-gradient_2:focus h2,
+  .fu-border-line-gradient_2:focus p,
+  .fu-border-line-gradient_3:focus h2,
+  .fu-border-line-gradient_3:focus p,
+  .fu-border-line-gradient_4:focus h2,
+  .fu-border-line-gradient_4:focus p,
+  .fu-border-line-gradient_5:focus h2,
+  .fu-border-line-gradient_5:focus p,
+  .fu-border-line-gradient_6:focus h2,
+  .fu-border-line-gradient_6:focus p,
+  .fu-border-line-gradient_7:focus h2,
+  .fu-border-line-gradient_7:focus p {
+    color: #fff;
+  }
+  .fu-main-body__card-white h2 {
+    padding-bottom: 0;
+
+    line-height: 22px;
+  }
+  .fu-main-body__card-white p {
+    margin-top: 0;
+  }
+  .fu-main-body__card-grey p {
+    margin-top: 0;
+  }
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .section--center.mdl-grid.mdl-grid--no-spacing.fu-main-header {
+    border-color: transparent;
+  }
+
+  .mdl-card_supporting-text.mdl-cell.mdl-cell--6-col.fu-main-social__icon {
+    padding-bottom: 5px;
+
+    text-align: center;
+  }
+  .fu-main-social__icon a {
+    padding-bottom: 4px;
+    padding-left: 13px;
+
+    font-size: 20px;
+  }
+
+  .fu-main-body__card-white h2 {
+    padding-bottom: 0;
+
+    line-height: 22px;
+  }
+  .fu-main-body__card-white p {
+    margin-top: 0;
+  }
+  .fu-main-body__card-grey p {
+    margin-top: 0;
+  }
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section--center.mdl-grid.mdl-grid--no-spacing.fu-main-header {
+    border-color: transparent;
+
+    padding-bottom: 22px;
+  }
+
+  .mdl-card_supporting-text.mdl-cell.mdl-cell--6-col.fu-main-social__icon {
+    padding-bottom: 5px;
+
+    text-align: center;
+  }
+  .fu-main-social__icon a {
+    padding-bottom: 4px;
+    padding-left: 13px;
+
+    font-size: 20px;
+  }
+
+  .fu-main-body__card-white h2 {
+    padding-bottom: 0;
+
+    line-height: 22px;
+  }
+  .fu-main-body__card-white p {
+    margin-top: 0;
+  }
+  .fu-main-body__card-grey p {
+    margin-top: 0;
+  }
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section--center.mdl-grid.mdl-grid--no-spacing.fu-main-header {
+    border-color: transparent;
+
+    padding-bottom: 22px;
+  }
+
+  .mdl-card_supporting-text.mdl-cell.mdl-cell--6-col.fu-main-social__icon {
+    padding-bottom: 5px;
+
+    text-align: center;
+  }
+
+  .fu-main-social__icon a {
+    padding-bottom: 4px;
+    padding-left: 13px;
+
+    font-size: 20px;
+  }
+
+  .fu-main-body__card-white h2 {
+    padding-bottom: 0;
+
+    line-height: 22px;
+  }
+  .fu-main-body__card-white p {
+    margin-top: 0;
+  }
+  .fu-main-body__card-grey p {
+    margin-top: 0;
+  }
+}

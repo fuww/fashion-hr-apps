@@ -1,0 +1,299 @@
+.fu-global-layout-apply-for-jobs {
+  // Header title "Solliciteren in de Modebranche"
+  .fu-header__background {
+    max-width: 100%;
+    min-height: 413px;
+
+    background-image: url("../../../images/background-images/solliciteren_in_de_modebranche.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .fu-header__title {
+    max-width: 980px;
+    h1 {
+      margin-bottom: 11px;
+    }
+    &.mdl-grid {
+      margin-top: -274px;
+      margin-bottom: -6px;
+      padding-bottom: 0;
+    }
+  }
+  .fu-header__title--title {
+    font-size: 30px;
+
+    margin-left: 10px;
+
+    color: #fff;
+    @media screen and (min-width: 480px) {
+      font-size: 50px;
+    }
+    @media screen and (min-width: 840px) {
+      font-size: 70px;
+
+      margin-left: 0;
+    }
+    @media screen and (min-width: 1024px) {
+      font-size: 80px;
+    }
+  }
+  // Phrase beneath header title
+  .fu-line {
+    max-width: 980px;
+    margin: auto;
+
+    background-color: #fff;
+  }
+  .fu-line__line {
+    max-width: 800px;
+    margin-bottom: -32px;
+  }
+  .fu-line__line--text {
+    margin: 15px 8px 15px 8px;
+
+    text-align: center;
+
+    color: #929191;
+    @media screen and (min-width: 480px) {
+      margin: 32px 8px 20px 8px;
+    }
+  }
+
+  // Section with white background
+  .fu-background-even {
+    position: relative;
+    z-index: 1;
+
+    max-width: 980px;
+    margin: auto;
+    padding-top: 40px;
+
+    background-color: #fff;
+    @media screen and (min-width: 480px) {
+      margin-bottom: -50px;
+      padding-top: 65px;
+      padding-bottom: 205px;
+    }
+  }
+  .fu-button__bar {
+    max-width: 670px;
+  }
+  .fu-button__container--button {
+    font-family: "Futura PT Web Condensed Bold";
+    font-size: 16px;
+    font-weight: 600;
+
+    display: block;
+
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    border: 1px solid #555;
+
+    &.active {
+      color: #fff;
+      background-color: #555;
+    }
+  }
+  .fu-button__container--button:hover {
+    color: #555;
+    background-color: transparent;
+    @media screen and (min-width: 480px) {
+      color: white;
+      background-color: #555;
+    }
+  }
+  .fu-button__container {
+    margin-bottom: 20px;
+  }
+  .fu-description__button {
+    text-align: center;
+    padding-bottom: 40px;
+    margin: 0px 8px 0px 8px;
+  }
+  .fu-profile__button--button {
+    font-family: "Futura PT Web Condensed Bold";
+    font-size: 16px;
+    font-weight: 600;
+
+    display: inline-block;
+
+    min-width: 175px;
+    padding: 7px 16px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    border: 1px solid #555;
+    background-color: #6188a8;
+  }
+  .fu-description--container {
+    padding-top: 60px;
+  }
+  .fu-description {
+    font-size: 16px;
+    padding-bottom: 40px;
+
+    max-width: 890px;
+    margin: 0px 25px 0px 25px;
+    @media screen and (min-width: 840px) {
+      margin: 0px auto 0px auto;
+      padding-bottom: 40px;
+    }
+  }
+  .fu-description--header {
+    font-size: 16px;
+    font-weight: 600;
+
+    max-width: 890px;
+    margin: 0px 25px 0px 25px;
+    @media screen and (min-width: 840px) {
+      margin: 0px auto 0px auto;
+    }
+  }
+
+  //Section with grey background
+  .fu-background-odd {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    background-color: #f2f2f2;
+    @media screen and (min-width: 480px) {
+      padding-top: 205px;
+      padding-bottom: 205px;
+    }
+  }
+  .fu-description-statistics {
+    font-size: 16px;
+
+    max-width: 700px;
+    margin: 0px 25px 0px 25px;
+    padding-bottom: 40px;
+    @media screen and (min-width: 840px) {
+      font-size: 22px;
+
+      margin: 0px auto 0px auto;
+    }
+  }
+  .fu-description-statistics-author {
+    font-size: 12px;
+    @media screen and (min-width: 840px) {
+      font-size: 14px;
+    }
+  }
+
+  //Section for the tabs
+  .fu-background-odd-tab {
+    padding-bottom: 50px;
+
+    background-color: #f2f2f2;
+  }
+  .fu-background-even-tab {
+    max-width: 980px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    background-color: #fff;
+    @media screen and (min-width: 480px) {
+      padding-top: 205px;
+      padding-bottom: 205px;
+    }
+  }
+  .fu-description--title {
+    font-size: 22px;
+    padding-bottom: 60px;
+    margin: 0;
+
+    text-align: center;
+  }
+  ul {
+    margin: 0;
+    padding-bottom: 40px;
+  }
+  .fu-description--list {
+    font-size: 16px;
+    line-height: 1.8;
+
+    max-width: 890px;
+    margin: 0 auto;
+    @media screen and (min-width: 840px) {
+      max-width: 890px;
+      margin: 0 auto 0 auto;
+    }
+  }
+  .fu-description--intro-list {
+    font-size: 16px;
+
+    max-width: 890px;
+    margin: 0 25px 0 25px;
+    @media screen and (min-width: 840px) {
+      margin: 0 auto 0 auto;
+    }
+  }
+  .fu-tabs__tab {
+    font-family: "Futura PT Web Condensed Bold";
+    font-size: 16px;
+    font-weight: 600;
+
+    display: inline-block;
+
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: #6188a8;
+    cursor: pointer;
+    @media screen and (min-width: 480px) {
+      width: 150px;
+    }
+    &.fu-tab-js-active {
+      color: #000;
+      background-color: #f2f2f2;
+    }
+  }
+  .fu-tabs__tab-bar {
+    text-align: center;
+  }
+  .fu-tab-content {
+    display: none;
+    &.fu-tab-content-js-active {
+      display: block;
+    }
+  }
+
+  // Buttons below tabs
+  .fu-button__container2 {
+    margin-bottom: 20px;
+    display: none;
+  }
+  .fu-description__button2 {
+    text-align: center;
+    padding-bottom: 40px;
+    margin: 0px 8px 0px 8px;
+  }
+  .fu-profile__button--button2 {
+    font-family: "Futura PT Web Condensed Bold";
+    font-size: 16px;
+    font-weight: 600;
+
+    display: inline-block;
+
+    min-width: 175px;
+    padding: 7px 16px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    border: 1px solid #555;
+    background-color: #6188a8;
+  }
+}

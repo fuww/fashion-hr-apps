@@ -1,0 +1,61 @@
+/*
+  amp-theme
+  ----
+  this is just a minimal styling entry point for your custom stylesheet
+  you can replace the following styles with your own stylesheet
+  or import them writing:
+   @import 'path/to/your/stylesheet.scss'
+
+*/
+@use "sass:string";
+@use "sass:meta";
+
+@use "font-face/futura-condensed";
+@use "font-face/fu-futura-pt";
+
+// Customized:
+
+@use "../../themes/amp-theme/assets/styles/shape"with ($shape-small-component-radius: 0px,
+  $shape-medium-component-radius: 0px,
+  $shape-large-component-radius: 0px, );
+@use "../../themes/amp-theme/assets/styles/theme"with ($theme-primary: #EA0051);
+// @use "../../themes/amp-theme/assets/styles/elevation"with ($elevation-card: 0px 0px 17px rgba(0, 0, 0, 0.3));
+
+@use "../themes/amp-theme/assets/styles/typography"with (
+  $heading-font-family: string.unquote("'Futura PT Web Condensed Bold', 'HelveticaNeue-CondensedBold', 'Helvetica Neue Condensed Bold', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif"),
+  $font-family: string.unquote("'FU Futura PT', 'HelveticaNeue-CondensedBold', 'Helvetica Neue Condensed Bold', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif")
+);
+
+// Defaults:
+
+// @import "../../themes/amp-theme/assets/styles/accordion";
+// @import "../../themes/amp-theme/assets/styles/author";
+// @import "../../themes/amp-theme/assets/styles/anchors";
+@import "../../themes/amp-theme/assets/styles/blogpost";
+// @import "../../themes/amp-theme/assets/styles/breadcrumbs";
+@import "../../themes/amp-theme/assets/styles/button";
+// @import "../../themes/amp-theme/assets/styles/card";
+// @import "../../themes/amp-theme/assets/styles/data-table";
+
+// @import "../../themes/amp-theme/assets/styles/embedder";
+// @import "../../themes/amp-theme/assets/styles/employer-branding-page";
+// @import "../../themes/amp-theme/assets/styles/figure";
+@import "../../themes/amp-theme/assets/styles/footer";
+// @import "../../themes/amp-theme/assets/styles/form";
+@import "../../themes/amp-theme/assets/styles/grid"; // important! contains most basscss stuff
+// @import "../../themes/amp-theme/assets/styles/header-link";
+@import "../../themes/amp-theme/assets/styles/hero";
+// @import "../../themes/amp-theme/assets/styles/list";
+// @import "../../themes/amp-theme/assets/styles/mdc-branding";
+// @import "../../themes/amp-theme/assets/styles/mdc-list-embedders"; // big, should only load on pages with embedders...
+@import "../../themes/amp-theme/assets/styles/navigation";
+@import "../../themes/amp-theme/assets/styles/navbar";
+// @import "../../themes/amp-theme/assets/styles/statistics_page";
+// @import "../../themes/amp-theme/assets/styles/table";
+// @import "../../themes/amp-theme/assets/styles/tabs";
+// @import "../../themes/amp-theme/assets/styles/tags";
+
+// @import '../../themes/amp-theme/assets/styles/styles.scss'; // to use the default styling
+
+
+@import "../../themes/amp-theme/assets/styles/marketplace-section/marketplace-section";

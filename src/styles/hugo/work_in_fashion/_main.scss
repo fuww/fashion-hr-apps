@@ -1,0 +1,55 @@
+html {
+  background-color: #ffffff !important;
+}
+
+.fu-main-section__header {
+  .fu-main-section__body--linetext {
+    margin-bottom: 0;
+    padding: 10px 0px 5px 0px;
+    text-align: left;
+    color: grey !important;
+    font-size: 16px;
+    border-bottom: 1px solid #404040;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .fu-main-section__header {
+    .fu-main-section__body--linetext {
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.fu-main-section__header {
+  .fu-main-section__body {
+    max-width: 800px;
+  }
+}
+
+.fu-main-section__header {
+  .fu-main-section__body--text {
+    max-width: 825px;
+  }
+}
+
+.fu-main-section__header {
+  .fu-main-section__body--text ul {
+    padding: 0;
+  }
+}
+
+.fu-main-section__header {
+  .fu-main-section__body--text {
+    ul {
+      li {
+        list-style: none;
+        font-family: "Futura PT Web Condensed Bold";
+        line-height: 2;
+        font-size: 16px;
+      }
+    }
+  }
+}

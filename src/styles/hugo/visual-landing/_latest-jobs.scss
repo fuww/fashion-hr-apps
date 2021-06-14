@@ -1,0 +1,139 @@
+.fu-background-gradient {
+  padding: 130px 0px;
+  background: #f8f8f8;
+}
+
+.fu-job-list {
+  background-color: #fff;
+}
+.fu-body__Button-background {
+  text-align: center;
+  background-color: #fff;
+
+  .fu-body__Button--background-blue {
+    background-color: #386a93;
+  }
+}
+
+.fu-country-label {
+  font-size: 25px;
+  display: inline-block;
+
+  margin: 0;
+  padding: 10px;
+
+  color: #386a93;
+}
+
+@media (min-width: 480px){
+  .fu-country-label {
+    font-size: 40px;
+  }
+}
+.fu-country-list {
+  font-size: 25px;
+  font-family: 'Droid Serif', Georgia, serif;
+
+  vertical-align: sub;
+
+  color: #929292;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  box-shadow: none;
+  width: 330px;
+  height: 47px;
+}
+
+@media (min-width: 480px) {
+  .fu-country-list {
+    font-size: 40px;
+
+    vertical-align: sub;
+  }
+}
+.fu-country-list:focus {
+  box-shadow: none;
+}
+
+.fu-background-gradient .fu-body__Button {
+  background-color: transparent;
+  padding: 50px;
+}
+
+// Embedded jobs
+
+.fu-embed-jobs {
+  background-color: #fff;
+}
+
+.fu-latest-jobs-list {
+  @extend .mdl-grid;
+}
+
+.fu-job-card-item-logo-container {
+  @extend .mdl-cell--2-col;
+  @extend .mdl-cell--8-col-tablet;
+  @extend .mdl-cell--4-col-phone;
+}
+
+.fu-job-description-container {
+  @extend .mdl-cell--10-col;
+  @extend .mdl-cell--8-col-tablet;
+  @extend .mdl-cell--4-col-phone;
+}
+
+.fu-teaser-card--color {
+  @extend .mdl-cell--12-col;
+}
+
+.fu-latest-jobs {
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.fu-latest-jobs-list {
+  border-bottom: 1px solid whitesmoke;
+  padding: 15px 10px;
+}
+
+.fu-job-card-item-logo-container {
+  align-self: center;
+}
+
+.fu-jobTitle {
+  margin: 0;
+
+  a {
+    color: #404040;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "Droid Serif", Georgia, serif;
+  }
+}
+
+.fu-companyName {
+  color: #396a92;
+  font-family: "Futura PT Web Condensed Bold", HelveticaNeue-CondensedBold, "Helvetica Neue Condensed Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.fu-publishedAt {
+  display: none;
+}
+
+.fu-company-name__description {
+  font-family: "Futura PT Web Condensed Bold", HelveticaNeue-CondensedBold, "Helvetica Neue Condensed Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: rgba(0, 0, 0, 0.54);
+  padding-bottom: 10px;
+}
+
+.fu-teaser-card--color {
+  text-align: right;
+
+  .fu-job-company-list__address {
+    font-family: "Futura PT Web Condensed Bold", HelveticaNeue-CondensedBold, "Helvetica Neue Condensed Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: bold;
+  }
+}

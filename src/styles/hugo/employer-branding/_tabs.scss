@@ -1,0 +1,91 @@
+.fu-branding--max-width {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.fu-branding--vertical-space {
+  margin-top: 65px;
+  
+  @media (min-width: 841px) {
+    margin-top: 90px;
+  }
+}
+
+.mdl-tabs {
+  .fu-branding-tabs-bar--background-color {
+    background-color: #EDEDED;
+    border-bottom: none;
+    justify-content: space-between;
+    overflow: scroll;
+    
+    @media (min-width: 841px) {
+      overflow: inherit;
+    }
+  }
+  
+  .mdl-tabs__panel {
+    padding: 20px 18px;
+    
+    h1 {
+      margin-bottom: 30px;
+      font-size: 26px;
+      
+      @media (min-width: 841px) {
+        margin-bottom: 40px;
+      }
+    }
+    
+    p {
+      margin-bottom: 25px;
+      font-size: 16px;
+    }
+    
+    .fu-branding-icon--space {
+      padding: 10px 10px 0 0;
+    }
+    
+  }
+  
+  .fu-branding-tabs-item {
+    width: 100%;
+    overflow: visible;
+    white-space: nowrap;
+    padding: 0 30px 0 30px;
+    
+    @media (min-width: 841px) {
+      overflow: inherit;
+    }
+  }
+}
+
+.mdl-tabs.is-upgraded .fu-branding-tabs-item.is-active {
+  background-color: #FFFFFF;
+  font-weight: bold;
+}
+
+.mdl-tabs.is-upgraded .fu-branding-tabs-item.is-active {
+  
+  &:after {
+    top: 0;
+    height: 3px;
+  }
+}
+
+.fu-branding--min-height {
+  min-height: 50em;
+}
+
+// tabs used for selecting different job categories, so no MDL
+
+.fu-tabs_content {
+  display: none;
+  
+  &.is-active {
+    display: block;
+  }
+}
+
+.fu-tabs_tab {
+  text-align: center;
+  cursor: pointer;
+}

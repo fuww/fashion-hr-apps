@@ -1,0 +1,181 @@
+// Quickfixes in preparation of Redesign 2019
+
+@font-face {
+    font-family: 'Futura PT Web Condensed Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://media.fashionunited.com/media/fonts/Futura%20PT_Cond%20Bold.woff2') format('woff2'),
+             url('https://media.fashionunited.com/media/fonts/Futura%20PT_Cond%20Bold.woff') format('woff');
+    font-display: swap;
+  }
+  
+  :root {
+    --font-system: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    --font-family: Georgia, Cambria, 'Bitstream Charter', 'Charis SIL', Utopia, 'URW Bookman L', 'Times New Roman', Times, serif;
+    --heading-font-family: 'Futura PT Web Condensed Bold', 'HelveticaNeue-CondensedBold', 'Helvetica Neue Condensed Bold', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    --font-navigation: var(--heading-font-family);
+    --font-family: var(--font-family);
+    --font-default: var(--font-system); // set this as base for body to make embedders look nice
+  }
+  
+  // .fonts-loaded html, .fonts-loaded body {
+  //   font-family: var(--font-family);
+  // }
+  
+  body {
+    font-family: var(--font-family);
+  }
+  
+  
+  body {
+  // Improve font rendering
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+//   color: var(--black-high);
+  }
+  
+  p {
+  // font-family: $mdc-typography-font-family;
+  font-family: var(--font-family);
+  
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  letter-spacing: .03125em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+//   color: var(--black-high);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font-family);
+//   color: var(--black-high);
+  }
+  
+  
+  .fonts-loaded {
+    html,
+    body {
+      font-family: var(--font-family);
+    }
+  
+    h1,
+    h2 {
+      font-family: var(--font-family);
+    }
+  
+    p {
+      font-family: var(--font-family);
+    }
+  
+    .mdl-navigation__link {
+      font-family: var(--heading-font-family);
+    }
+
+  
+    .fu-footer-landing-page h2,
+    .fu-footer-landing-page h3,
+    .fu-footer-landing-page h4,
+    .fu-footer-landing-page h5,
+    .fu-footer-landing-page h6,
+    .fu-footer-landing-page p {
+      font-family: var(--font-family);
+    }
+  
+    .fu-body__button--background-blue {
+      span {
+        font-family: var(--heading-font-family);
+      }
+    }
+  
+    .fu-main-body__card-white p,
+    .fu-main-body__card-grey p,
+    .fu-main-body__card-white h2,
+    .fu-main-body__card-grey h4,
+    .fu-main-breadcrom__links--text {
+      font-family: var(--heading-font-family);
+    }
+  
+    .fu-footer__list--Header,
+    .mdl-mega-footer--link-list,
+    .mdl-mega-footer--heading {
+      font-family: var(--heading-font-family);
+    }
+  }
+  
+  
+  
+  
+  .fonts-loaded {
+    h1 {
+      font-family: var(--heading-font-family);
+    }
+    .fu-hr-apps-header {
+      font-family: var(--heading-font-family);
+    }
+  
+    .fu-hr-apps-button {
+      font-family: var(--heading-font-family);
+    }
+  
+    .fu-hr-apps-section2 {
+  
+      h2 {
+        font-family: var(--heading-font-family);
+      }
+    }
+  
+    .fu-hr-apps-button-container {
+      font-family: var(--heading-font-family);
+    }
+  
+    .fu-hr-apps-section4 {
+      h3 {
+        font-family: var(--font-family);
+      }
+  
+      p {
+        font-family: var(--heading-font-family);
+      }
+  
+      span {
+        font-family: var(--heading-font-family);
+      }
+    }
+  
+    .fu-hr-apps-section5 {
+  
+      .fu-hr-apps-teaser {
+        font-family: var(--heading-font-family);
+      }
+  
+      p {
+        font-family: var(--heading-font-family);
+      }
+    }
+  
+    .fu-hr-apps-section6 {
+      h3 {
+        font-family: var(--font-family);
+      }
+  
+      p {
+        font-family: var(--heading-font-family);
+      }
+  
+      .fu-hr-apps-input {
+        font-family: var(--heading-font-family);
+      }
+  
+      .fu-hr-apps-signup {
+        button {
+          font-family: var(--heading-font-family);
+        }
+      }
+    }
+  }
+  

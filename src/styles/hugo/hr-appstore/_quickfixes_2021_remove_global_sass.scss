@@ -1,0 +1,58 @@
+
+// @import "../sass/abstracts/variables-landing", "../sass/abstracts/mixins",
+//   "../sass/abstracts/placeholders";
+
+// scss-lint:disable NameFormat, Comment
+// @import './variables';
+$FONT_FACE_OBSERVER: true;
+// $color-primary: $color-primary-all-categories;
+$wfb-header-container: 745px;
+$color-tertiary: '#404040';
+$font-size-primary: 16px;
+$line-height-primary: 1.4;
+
+$primary-font-family: Georgia, Cambria, 'Bitstream Charter', 'Charis SIL', Utopia, 'URW Bookman L', 'Times New Roman', Times, serif;
+/// Fall back font for performance
+/// @group ABT
+/// @type String
+/// @author Lido Fernandez
+$performance-primary-font-family: $primary-font-family;
+/// Secondary font family in the Jobboard & Company Directory & main font in the dashboard
+/// @group ABT
+/// @type String
+/// @author Lido Fernandez
+$secondary-font-family: var(--heading-font-family);
+/// Fall back font for performance
+/// @group ABT
+/// @type String
+/// @author Lido Fernandez
+$performance-secondary-font-family: $secondary-font-family;
+
+$text-color-primary-horver: #868383;
+$text-color-primary: #404040;
+
+// @import "../sass/typography/landing/hr-appstore";
+
+.fu-hr-apps-section2 {
+    text-align: center;
+    & h2 {
+        color: white;
+    }
+}
+
+// @import "../sass/layouts/footer", "../sass/layouts/layouts",
+//   "../sass/layouts/navigation", "../sass/layouts/images";
+
+// @import "../sass/grid/grid";
+
+// @import "../sass/components/button", "../sass/components/mdl-sudo-icons";
+
+// @import "../sass/palette/palette";
+
+.footer--link-list, .fonts-loaded .mdl-mega-footer--heading {
+    font-family: var(--heading-font-family);
+}
+
+.fu-footer__list .mdl-mega-footer--link-list a {
+    font-family: var(--heading-font-family);
+}

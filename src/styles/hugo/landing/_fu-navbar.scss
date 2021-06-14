@@ -1,0 +1,114 @@
+.fu-nav-header--button.mdl-navigation__link {
+  line-height: initial;
+
+  height: 64px;
+}
+
+.mdl-layout__header {
+  .mdl-button {
+    font-size: 17px;
+    font-weight: 300;
+  }
+
+  .mdl-button:hover,
+  .mdl-button:active:hover,
+  .mdl-button:active {
+    background-color: transparent;
+  }
+}
+
+.mdl-layout__drawer {
+  .mdl-button.mdl-navigation__link {
+    background-color: inherit;
+  }
+}
+
+.fu-nav-header--button__dropdown a,
+.fu-nav-mobile__dropdown a {
+  display: block;
+
+  padding: 0 16px;
+
+  color: #308184;
+}
+
+.fu-nav-header--button__dropdown .mdl-menu__item,
+.fu-nav-mobile__dropdown .mdl-menu__item {
+  padding: 0;
+}
+
+.fu-nav-header--button__dropdown a,
+.fu-nav-mobile__dropdown a {
+  font-weight: 300;
+
+  display: block;
+
+  padding: 0 16px;
+
+  color: #404040;
+}
+
+/* Container for IE */
+
+.fu-main-body__container {
+  padding: 13px 3px;
+}
+
+/* Company logos */
+
+.fu-banner-ad-list {
+  padding-bottom: 70px;
+}
+
+.fu-logo-container {
+  display: flex;
+
+  padding: 40px 10px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.fu-company_logo-style {
+  display: block;
+
+  width: 170px;
+  height: 100px;
+
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+}
+
+
+.company_logo_1 {
+  background-image: url('/global-assets/fu20164/dist/landing/images/superdry_logo.svg');
+}
+
+.company_logo_2 {
+  background-image: url('/global-assets/fu20164/dist/landing/images/hugoboss_logo.svg');
+}
+
+.company_logo_3 {
+  background-image: url('/global-assets/fu20164/dist/landing/images/zalando_logo.svg');
+}
+
+.company_logo_4 {
+  background-image: url('/global-assets/fu20164/dist/landing/images/adidas_logo.svg');
+}
+
+.company_logo_5 {
+  background-image: url('/global-assets/fu20164/dist/landing/images/gstar_logo.svg');
+}
+
+.company_logo_6 {
+  background-image: url('/global-assets/fu20164/dist/landing/images/nike_logo.svg');
+}
+
+.company_logo_7 {
+  background-image: url('/global-assets/fu20164/dist/landing/images/inditex_logo.svg');
+}
+
+.company_logo_8 {
+  background-image: url('/global-assets/fu20164/dist/landing/images/escada_logo.svg');
+}

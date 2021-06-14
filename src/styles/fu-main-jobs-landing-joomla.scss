@@ -1,0 +1,77 @@
+@import "@material/list/dist/mdc.list.css";
+@import "joomla_pages/styles/variables";
+@import "joomla_pages/styles/fu-variables-fu";
+@import "joomla_pages/styles/fu-variables";
+@import "joomla_pages/styles/abstracts/variables";
+@import "joomla_pages/styles/abstracts/placeholders";
+
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ */
+
+// Core variables and mixins
+@import "bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/print";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/navs";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/pagination";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/pager";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/labels";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/badges";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/list-group";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/panels";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/wells";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/close";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/modals";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/carousel";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+@import "joomla_pages/styles/components/fu-carousel";
+@import "joomla_pages/styles/components/fu-nav-pills";
+
+// Resets for Joomla
+
+html {
+  background-color: #fff !important;
+}
+
+a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+li.active {
+  border-bottom: none;
+}
+
+.fu-articlepage {
+  padding-top: 30px;
+}
+
+.item-page span p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0 0 22px;
+}
+
+.breadcrumb a {
+  font-size: 14px;
+  color: #404040;
+}
+
+.mdl-layout__content {
+  z-index: auto;
+}
+
+@import "./sass/resets/mdl-list";

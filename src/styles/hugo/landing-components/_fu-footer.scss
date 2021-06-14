@@ -1,0 +1,414 @@
+/*...............................................
+
+FOOTER 1 STYLE (build in a div section/ only keep this footer CSS in landing page) //cleaned
+................................................*/
+
+.fu-footer-landing-page__section-website-list p,
+.fu-footer-landing-page__section-website-list--links-list ul li a,
+.fu-footer-landing-page__section-card-grey p {
+  font-size: 12px;
+}
+
+.fu-footer-landing-page__section-card-grey h2,
+.fu-footer-landing-page__section-card-grey h3,
+.fu-footer-landing-page__section-website-list h6,
+.fu-footer-landing-page__section-website-list p,
+.fu-footer-landing-page__section-website-list--links-list ul li a,
+.fu-footer-landing-page__section-card-grey p {
+  color: $text-color-primary;
+}
+
+.fu-footer-landing-page__section-website-list--links-list ul li a:hover {
+  text-decoration: none;
+
+  color: $text-color-primary-horver;
+}
+
+.fu-footer-landing-page {
+  background-color: #f8f8f8;
+
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+}
+
+.section--center.mdl-grid.mdl-grid--no-spacing.fu-footer-landing-page__section {
+  margin-bottom: 50px;
+
+  max-width: 1440px;
+}
+
+.fu-footer-landing-page__section-website-list {
+  border-right: 1px solid #b7b2b2;
+
+  padding-right: 40px;
+  padding-left: 8px;
+}
+
+.fu-footer-landing-page__section-website-list h6 {
+  margin-top: 7px;
+  margin-bottom: 0;
+
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fu-footer-landing-page__section-website-list p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  text-align: justify;
+}
+
+.fu-footer-landing-page__section-website-list--links {
+  padding: 0;
+}
+
+.fu-footer-landing-page__section-website-list--links-list {
+  margin: 0;
+
+  padding-right: 15px;
+}
+
+.fu-footer-landing-page__section-website-list--links-list ul {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.fu-footer-landing-page__section-website-list--links-list ul li a {
+  text-align: justify;
+  text-decoration: none;
+}
+
+.fu-footer-landing-page__section-card-grey {
+  padding-top: 9px;
+  padding-right: 8px;
+  padding-left: 40px;
+}
+
+.fu-footer-landing-page__section-card-grey h2,
+.fu-footer-landing-page__section-card-grey h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $text-color-primary;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fu-footer-landing-page__section-card-grey p {
+  margin-top: 8px;
+  margin-bottom: 22px;
+
+  text-align: justify;
+}
+
+/*...............................................
+
+FOOTER 1.1 STYLE only for one column footer
+................................................*/
+
+.fu-footer-landing-page__one-column--section {
+  border-right: 1px solid transparent;
+
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+/*...............................................
+
+FOOTER 2 STYLE //cleaned
+................................................*/
+
+.mdl-mega-footer {
+  margin-top: 0;
+}
+
+.mdl-mega-footer--drop-down-section,
+.mdl-mega-footer__drop-down-section {
+  display: block;
+  position: relative;
+}
+
+.mdl-grid.mdl-grid--no-spacing.fu-footer__main-section {
+  border-bottom-width: 1px;
+
+  border-bottom-style: solid;
+
+  border-bottom-color: #656565;
+
+  max-width: 970px;
+}
+
+.fu-footer__section {
+  text-align: center;
+}
+
+.fu-footer__section-information {
+  color: #fff;
+
+  font-size: 14px;
+}
+
+/* footer Joomla */
+
+.fu-footer__list {
+  .mdl-mega-footer--heading {
+    position: relative;
+
+    margin-bottom: 6px;
+
+    padding-right: 40px;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    line-height: 23.8px;
+    white-space: nowrap;
+    color: #e0e0e0;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    box-sizing: border-box;
+    -webkit-font-smoothing: initial;
+  }
+  .mdl-mega-footer--link-list a {
+    padding-right: 3px;
+
+    white-space: pre-line;
+    color: inherit;
+
+    font-size: 13px;
+    font-weight: normal;
+
+    -webkit-font-smoothing: initial;
+  }
+}
+
+/* ----------- Non-Retina Screens Desktop ----------- */
+
+@media (max-width: 840px) {
+  .fu-footer-landing-page__section-website-list {
+    border-right: 0;
+
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .fu-footer-landing-page__section-card-grey {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .mdl-mega-footer--drop-down-section,
+  .mdl-mega-footer__drop-down-section {
+    display: block;
+    position: relative;
+
+    padding: 0 10px;
+  }
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .fu-footer-landing-page__section-website-list p {
+    margin-top: 4px;
+  }
+  .fu-footer-landing-page__section-card-grey p {
+    margin-top: 0;
+  }
+  .fu-footer-landing-page {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .fu-footer-landing-page__section-website-list {
+    border-right: 0;
+
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .fu-footer-landing-page__section-card-grey {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .fu-footer__list ul li {
+    padding-top: 10px;
+
+    line-height: 31px;
+
+    font-size: 16px;
+  }
+  .fu-footer__list--Header {
+    margin-bottom: 3px;
+  }
+  .fu-footer__list h1 {
+    font-size: 18px;
+  }
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .fu-footer-landing-page__section-website-list p {
+    margin-top: 4px;
+  }
+  .fu-footer-landing-page__section-card-grey p {
+    margin-top: 0;
+  }
+  .fu-footer-landing-page {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .fu-footer-landing-page__section-website-list {
+    border-right: 0;
+
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .fu-footer-landing-page__section-card-grey {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .fu-footer__list ul li {
+    padding-top: 10px;
+
+    line-height: 31px;
+
+    font-size: 16px;
+  }
+  .fu-footer__list--Header {
+    margin-bottom: 3px;
+  }
+  .fu-footer__list h1 {
+    font-size: 18px;
+  }
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .fu-footer-landing-page__section-website-list p {
+    margin-top: 4px;
+  }
+  .fu-footer-landing-page__section-card-grey p {
+    margin-top: 0;
+  }
+  .fu-footer-landing-page {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .fu-footer-landing-page__section-website-list {
+    border-right: 0;
+
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .fu-footer-landing-page__section-card-grey {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .fu-footer__list ul li {
+    padding-top: 10px;
+
+    line-height: 31px;
+
+    font-size: 16px;
+  }
+  .fu-footer__list--Header {
+    margin-bottom: 3px;
+  }
+  .fu-footer__list h1 {
+    font-size: 18px;
+  }
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .fu-footer-landing-page__section-website-list p {
+    margin-top: 4px;
+  }
+  .fu-footer-landing-page__section-card-grey p {
+    margin-top: 0;
+  }
+  .fu-footer-landing-page {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .fu-footer-landing-page__section-website-list {
+    border-right: 0;
+
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .fu-footer-landing-page__section-card-grey {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .fu-footer__list ul li {
+    padding-top: 10px;
+
+    line-height: 31px;
+
+    font-size: 16px;
+  }
+  .fu-footer__list--Header {
+    margin-bottom: 3px;
+  }
+  .fu-footer__list h1 {
+    font-size: 18px;
+  }
+}
+
+/* ----------- iPad 1 and 2 ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .fu-footer-landing-page {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .fu-footer-landing-page__section-website-list {
+    border-right: 0;
+
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .fu-footer-landing-page__section-card-grey {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .fu-footer-landing-page__section-website-list {
+    border-right: 1px solid #b7b2b2;
+
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .fu-footer-landing-page__section-card-grey {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

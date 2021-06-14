@@ -1,0 +1,148 @@
+/**
+
+* Category variable colors
+
+*/
+
+$retail-color: #324358;
+$retail-category-color: rgba($retail-color, .15);
+$retail-color-hover: rgba($retail-color, .4);
+$retail-category-tag-hover: rgba($retail-color, .79);
+
+$culture-color: #4dcdb3;
+$culture-category-color: rgba($culture-color, .15);
+$culture-color-hover: rgba($culture-color, .4);
+$culture-category-tag-hover: rgba($culture-color, .79);
+
+$fairs-color: #871472;
+$fairs-category-color: rgba($fairs-color, .15);
+$fairs-color-hover: rgba($fairs-color, .4);
+$fairs-category-tag-hover: rgba($fairs-color, .79);
+
+$fashion-color: #ff9067;
+$fashion-category-color: rgba($fashion-color, .15);
+$fashion-color-hover: rgba($fashion-color, .4);
+$fashion-category-tag-hover: rgba($fashion-color, .79);
+
+$business-color: #88786d;
+$business-category-color: rgba($business-color, .15);
+$business-color-hover: rgba($business-color, .4);
+$business-category-tag-hover: rgba($business-color, .79);
+
+$people-color: #0099d3;
+$people-category-color: rgba($people-color, .15);
+$people-color-hover: rgba($people-color, .4);
+$people-category-tag-hover: rgba($people-color, .79);
+
+$education-color: #639a7a;
+$education-article-color: #a5c4b1;
+$education-article-nav-bg-color: #e0ebe4;
+$education-category-color: rgba($education-color, .15);
+$education-color-hover: rgba($education-color, .40);
+$education-category-tag-hover: rgba($education-color, .79);
+
+$job-of-the-week-color: #2a7fa0;
+$job-of-the-week-background-color: rgba($job-of-the-week-color, .15);
+$job-of-the-week-button-color: #085472;
+
+$newsletter-color: rgba(193,148,35,.58);
+$newsletter-background-color: rgba($newsletter-color, .15);
+$newsletter-button-color: rgba(193,148,35,.58);
+$newsletter-button-color-hover: rgba(193,148,35,.98);
+
+// Fonts variables
+
+$open-sans: 'Futura PT Web Condensed Bold';
+$droid: 'Droid Serif';
+
+$default-fonts-helvetica: "Futura PT Web Condensed Bold", HelveticaNeue-CondensedBold, "Helvetica Neue Condensed Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$defaults-fonts-georgia: Georgia, serif;
+
+/**
+
+* Main NavBar colors
+
+*/
+
+$navbar-active-color: #fff;
+$navbar-default-color: #dbdbdb;
+
+/**
+
+* Default variable colors
+
+*/
+
+$default-category-color: #666;
+$default-category-category-color: rgba($default-category-color,.15);
+$default-category-color-hover: rgba($default-category-color,.4);
+$default-category-category-tag-hover: rgba($default-category-color,.79);
+
+$adunit-text-color: #696969;
+$last-news-background-color: #ecede8;
+$default-background-color: #eee;
+$default-label-background-color: #404040;
+$default-border-line: #bdbdbd;
+
+/**
+
+* Palette small devices colors
+
+*/
+
+$last-news-background-color-mobile: #ecede8;
+$border-color-mobile-news: #9b9b9b;
+$main-border-color-mobile: $border-color-mobile-news;
+$main-article-background-color: rgba(241, 241, 241, .5);
+
+/**
+
+* Background images and colors
+
+*/
+
+$background-color-image-default: white;
+
+/**
+
+* Grid for landing pages
+
+*/
+
+$max-width-container: 980px;
+
+/**
+
+* Transitions
+
+*/
+
+$default-transition: all .2s;
+
+/**
+
+* Table
+
+*/
+
+$table-color-anchors: #404040;
+$table-background-color: #f8f8f8;
+$table-background-color-responsive: $table-background-color;
+
+/**
+
+* Cards
+
+**/
+
+$card-backgroound-color: #bdbdbd;
+$card-container-background-color: rgba($card-backgroound-color, 0.15);
+$card-side-container-background-color: rgba($card-backgroound-color, 0.27);
+
+/**
+
+* Loaders
+
+**/
+
+$loader-color: $job-of-the-week-button-color;

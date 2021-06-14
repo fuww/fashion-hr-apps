@@ -1,0 +1,192 @@
+// Especific style for Edu & Exec
+.fu-education-article, .fu-executive-article, .fu-sub-menu {
+  .container {
+    padding: 0;
+    @media (min-width: 768px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}
+
+// Navbar for pills style
+.nav {
+  .fu-education-article & {
+    background-color: $education-article-nav-bg-color;
+    &.nav-justified> li {
+      width: auto;
+      @media (min-width: 768px) {
+        float: left;
+      }
+    }
+  }
+  .fu-executive-article & {
+    background-color: $default-category-category-color;
+    &.nav-justified> li {
+      width: auto;
+      @media (min-width: 768px) {
+        float: left;
+      }
+    }
+  }
+  &.nav-pills {
+    font-size: 16px;
+
+    margin-bottom: 5px;
+    @media screen and (max-width: 991px) {
+      margin-top: 5px;
+    }
+    > li> a {
+      padding: 9px 15px;
+    }
+    a {
+      @at-root {
+        .fu-education-article & {
+          color: $education-article-color;
+        }
+        .fu-executive-article & {
+          color: $default-category-category-tag-hover;
+        }
+      }
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 33%;
+
+        display: none;
+
+        width: 100%;
+        max-width: 33%;
+        height: 5px;
+
+        content: '';
+
+        background-color: $default-category-color;
+        @media screen and (max-width: 768px) {
+          left: 48%;
+
+          max-width: 4%;
+        }
+        @at-root {
+          .fu-education-article & {
+            background-color: $education-color;
+          }
+          .fu-executive-article & {
+            background-color: $default-category-color;
+          }
+        }
+      }
+      &:hover {
+        background-color: inherit;
+        @at-root {
+          .fu-education-article & {
+            color: $education-color;
+          }
+          .fu-executive-article & {
+            color: $default-category-color;
+          }
+        }
+        &::after {
+          display: block;
+        }
+      }
+      &:focus {
+        background-color: inherit;
+      }
+    }
+    .active a, .active a:hover {
+      color: white;
+      @at-root {
+        .fu-education-article & {
+          background-color: $education-color;
+        }
+        .fu-executive-article & {
+          background-color: $default-category-color;
+        }
+      }
+    }
+  }
+}
+
+// main navbar style
+.fu-navbar {
+  .navbar-nav {
+    .active {
+      > a {
+        background-color: initial;
+        color: $navbar-default-color; // TODO: Fixed active behaviour in Joomla
+        &:hover, &:focus {
+          background-color: initial !important; // TODO: Fixed active behaviour in Joomla
+        }
+      }
+    }
+    .dropdown-menu {
+      .active {
+        a {
+          background-color: #555!important; // TODO: Fixed active behaviour in Joomla
+        }
+      }
+    }
+    .open > a:hover {
+      background-color: #555 !important; // TODO: Fixed active behaviour in Joomla
+    }
+    > li> a {
+      padding: 0 16px !important;
+
+      color: $navbar-default-color;
+      &::after {
+        position: absolute;
+        bottom: -1px;
+        left: 33%;
+
+        display: none;
+
+        width: 100%;
+        max-width: 33%;
+        height: 5px;
+
+        content: '';
+
+        background-color: $navbar-active-color;
+        @media screen and (max-width: 768px) {
+          left: 48%;
+
+          max-width: 4%;
+        }
+      }
+      &:hover {
+        color: $navbar-active-color;
+        background-color: inherit;
+        &::after {
+          display: block;
+        }
+      }
+      &:focus {
+        background-color: inherit;
+      }
+      .caret {
+        position: absolute;
+        top: 31px;
+        right: 3px;
+      }
+    }
+  }
+}
+
+// Default dropdown for the navbars
+.dropdown-menu {
+  border-radius: 0;
+  box-shadow: none;
+  @at-root {
+    .fu-education-article &, .fu-executive-article &, & {
+      a {
+        &:hover {
+          background-color: inherit;
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

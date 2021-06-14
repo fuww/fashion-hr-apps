@@ -1,0 +1,217 @@
+// Tables
+
+td, th {
+  @include fu-typo-display-1($use-primary-font-family: true);
+}
+
+.fu-statistics-layout {
+  background-color: #fff;
+
+  .fu-statistics-container {
+    background-color: #fff;
+
+    .fu-header--image {
+      background-image: url("/global-assets/fu20164/dist/images/background-images/BI_HeaderImg.jpg");
+      height: 260px;
+      background-color: #2c2c2c;
+      background-repeat: no-repeat;
+      background-position: 50% 14%;
+      background-size: cover;
+      display: flex;
+      transition: all 0.2s;
+      flex-shrink: 0;
+      align-items: flex-end;
+
+      @media (min-width: 481px) {
+        height: 390px;
+      }
+    }
+
+    .fu-statistics-horizontalrule--normal {
+      margin: 20px 0;
+
+      @media (min-width: 481px) {
+        margin: 10px 0;
+      }
+    }
+
+    .fu-statistics-table--no-margin {
+      margin-bottom: 0;
+    }
+
+    .fu-color--white {
+      background-color: #fff;
+    }
+
+    .fu-graph-container {
+      margin-top: 0;
+
+      // todo remove important when statistics css file global-assets/joomla_pages is deleted
+      @media (min-width: 841px) {
+        margin-top: -60px !important;
+      }
+    }
+
+    .fu-statistics-tabs-container {
+      background-color: #fff;
+      padding: 10px 20px 100px;
+
+      @media (min-width: 841px) {
+        background-color: hsla(0, 0%, 74%, 0.27);
+        padding: 30px;
+      }
+    }
+
+    .fu-statistics-tabs {
+      border-bottom: none;
+    }
+
+    .mdl-tabs {
+      .mdl-tabs__tab {
+        color: #666;
+        background-color: #fff;
+        font-family: "Futura PT Web Condensed Bold";
+        font-weight: bold;
+        padding: 0 8px;
+
+        &.is-active {
+          color: #fff;
+          background-color: #666;
+
+          &:after {
+            background: none;
+          }
+        }
+      }
+    }
+
+    .fu-header--image__title {
+      font-size: 26px;
+      line-height: 1.35;
+      max-width: 970px;
+      margin: 0 auto 70px;
+      padding-left: 8px;
+      transition: all 0.2s;
+      color: $color-header-title;
+
+      @media (min-width: 481px) {
+        font-size: 40px;
+      }
+
+      @media (min-width: 841px) {
+        font-size: 60px;
+      }
+    }
+
+    .fu-body-container-position {
+      position: relative;
+      margin-top: -60px;
+    }
+
+    .section--center {
+      max-width: 970px;
+    }
+
+    h2 {
+      color: $text-color-primary;
+      line-height: normal;
+
+      &.fu-statistics-subtitle {
+        margin: 0 0 30px;
+
+        @media (min-width: 481px) {
+          margin: 0 0 15px;
+        }
+      }
+    }
+
+    hr {
+      margin: 80px 0;
+    }
+
+    table {
+      margin-bottom: 20px;
+    }
+
+    .fu-table--horizontal-scroll {
+      overflow: auto;
+      white-space: nowrap;
+    }
+
+    td {
+      padding-right: 20px;
+    }
+
+    th {
+      text-align: left;
+    }
+
+    .center {
+
+      table {
+        margin: 0 auto;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+    .fu-graph-container--odd {
+      padding: 20px;
+      background-color: hsla(0, 0%, 74%, 0.15);
+
+      @media (min-width: 841px) {
+        padding: 80px;
+        max-width: 970px;
+      }
+
+      a {
+        color: $text-color-primary;
+      }
+    }
+
+    .fu-statistics-landing-pages {
+      .fu-line-separator {
+        width: 100%;
+      }
+    }
+
+    #statistics-footer {
+      width: inherit;
+    }
+
+    .fu-statistics-footer {
+      text-align: center;
+    }
+
+    .fu-container-text--center {
+      text-align: center;
+
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    .fu-container--spacing {
+      margin-top: 40px;
+    }
+
+    .fu-container-support-text--box {
+      padding: 30px 40px 0;
+
+      @media (min-width: 481px) {
+        padding: 30px;
+      }
+
+      .fu-tabs__tab {
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .fu-tab-js-active {
+        background-color: #666;
+        color: #fff;
+      }
+    }
+  }
+}
